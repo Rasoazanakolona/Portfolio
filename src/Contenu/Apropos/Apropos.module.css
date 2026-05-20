@@ -1,0 +1,110 @@
+.Apropos h1{
+margin: 20px 0 20px 25px;
+}
+.blocs{
+border-top: solid 2px rgb(39, 44, 63);
+display: flex;
+flex-direction: column;
+padding:  0 25px 40px 25px;
+animation: Sorter 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+.IPersonnelle, .InfoBloc{
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+}
+.IPersonnelle:hover, .InfoBloc:hover {
+    border-color: rgba(56, 189, 248, 0.4);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    background: rgba(30, 41, 59, 0.8);
+}
+
+.TitreBlocs{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+    background-color:  rgba(255, 255, 255, 0.05);
+    border-bottom: px solid rgba(255, 255, 255, 0.1);
+}
+.TitreBlocs h3 {
+letter-spacing: 3px;
+color:  #38bdf8;
+margin: 0;
+font-size: 0.9rem;
+}
+.detailIP, .detailIDS{
+    padding: 20px;
+} 
+.detailIP div, .detailIDS div {
+    display: flex;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+.detailIP div h4, .detailIDS div h4{
+    color: #c0d1ea;
+    width: 120px;
+    font-weight: 600;
+}
+.detailIP div p {
+    color: #f1f5f9;
+}
+.Specialiter{
+font-weight: bold;
+    color: white;
+    background: rgba(56, 189, 248, 0.2);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+.autresInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+.detailID {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.detailID  div p {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.detailIDS div p {
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+@media (max-width: 768px) {
+    .autresInfo {
+        grid-template-columns: 1fr;
+    }
+    .detailID {
+        grid-template-columns: 1fr;
+    }
+    .Apropos h1 {
+        font-size: 1.8rem;
+        margin: 15px 0 15px 15px;
+        text-align: center; 
+    }
+
+}
+@keyframes Sorter{
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

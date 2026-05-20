@@ -1,0 +1,185 @@
+.carte {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background: rgba(30, 41, 59, 0.4);
+    border-radius: 15px;
+    border: 1px solid rgba(212, 4, 4, 0.05);
+    transition: 0.3s ;
+    position: relative;
+}
+
+.carte:hover {
+    background: rgba(34, 46, 67, 0.4);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    border-color: rgba(56, 189, 248, 0.4);
+}
+
+.carte h3 {
+    color: rgb(170, 198, 231);
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    letter-spacing: 2px; 
+}
+
+.carte img:hover {
+    transform: scale(1.10) rotate(5deg);
+    filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.3));
+}
+
+.carte img {
+    width: 60px;
+    height: auto;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
+    transition: 0.3s ease;
+    margin: 5px;
+}
+
+.carte p {
+    color: #868687;
+    font-weight: 600;
+}
+
+.teteDePres {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    padding-left: 25px;
+    gap: 15px;
+    margin-bottom: 40px;
+    background-color: rgba(15, 66, 91, 0.114);
+    width: 100%;
+}
+
+.teteDePres h3 {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    color: #38bdf8;
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+
+.BlocContet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.blocsGauche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BlocsIcones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px ;
+    margin-top: 10px;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.blocsDroite img {
+    margin-top: 10px;
+}
+
+.BlocsIcones div {
+    text-align: center;
+}
+
+.blocsDroite {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocIconeBP {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 400px;
+}
+
+.blocsSeul {
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blocsSeul h3 {
+    margin-bottom: 10px;
+}
+
+.blocIconeBP h3 {
+    margin-bottom: 10px;
+}
+
+.JSIcone { width: 55px !important; }
+.phpIcone { width: 100px !important; }
+.bootstrapIcone { width: 80px !important; }
+
+
+@media (max-width: 768px) {
+    .BlocContet {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        margin-top: 60px; 
+    }
+
+    .BlocsIcones, 
+    .blocIconeBP {
+        width: 100%;
+        max-width: 320px; 
+        justify-content: center;
+        gap: 15px; 
+    }
+
+    .carte {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 15px;
+    }
+
+    .teteDePres {
+        padding-left: 15px;
+        gap: 10px;
+    }
+
+    .teteDePres h3 {
+        font-size: 0.95rem; 
+        letter-spacing: 1.5px;
+    }
+
+    .carte .BlocContet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        width: 100%;
+        gap: 20px;
+    }
+
+    .carte img {
+        width: 50px; 
+    }
+    
+    .JSIcone { width: 45px !important; }
+    .phpIcone { width: 80px !important; }
+    .bootstrapIcone { width: 65px !important; }
+}

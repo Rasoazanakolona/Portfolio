@@ -1,0 +1,15 @@
+html, body, h1, h2, h3, h4, p{
+margin: 0;
+padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  monospace, 'Courier New', Consolas, 'Fira Code', 'Courier Prime', serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}

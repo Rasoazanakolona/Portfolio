@@ -1,0 +1,87 @@
+.competenceContenu h1 {
+    margin: 20px 0 20px 25px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #f1f5f9;
+}
+
+.Blocs {
+    border-top: solid 2px rgb(39, 44, 63);
+    animation: Sorter 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+.BInterieur {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.BCompet {
+    background-color: transparent;
+    border: transparent;
+    color: #94a3b8;
+    margin-left: 15px;
+    font-size: 18px;
+    padding: 10px 20px; 
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.BCompet:hover {
+    color: rgba(0, 212, 250, 0.889);
+    background: rgba(56, 189, 248, 0.08);
+    transform: translateY(-2px);
+}
+
+.BCompet:active {
+    transform: scale(0.95);
+}
+
+.BCompet:global(.active) {
+    color: rgb(66, 211, 255) !important;
+    background: rgba(56, 189, 248, 0.12);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .competenceContenu h1 {
+        font-size: 1.8rem;
+        margin: 15px 0 15px 15px;
+        text-align: center;
+    }
+
+    .BInterieur {
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .BCompet {
+        margin-left: 0;
+        font-size: 14px;
+        padding: 8px 12px;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}
+
+@keyframes Sorter {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
