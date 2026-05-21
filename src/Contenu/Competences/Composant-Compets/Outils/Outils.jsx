@@ -2,7 +2,7 @@ import styles from "../FBBAO.module.css"
 import { Wrench} from 'lucide-react';
 import Gantt from "../../../../Icones/Gantt.png";
 import FIgma from "../../../../Icones/figma.png"
-import Postman from "../../../../Icones/postman.png"
+import Postman from "../../../../Icones/Postman.png"
 import VSCode from "../../../../Icones/vscode.png"
 import Github from "../../../../Icones/github.png"
 import Git from "../../../../Icones/git.png"
