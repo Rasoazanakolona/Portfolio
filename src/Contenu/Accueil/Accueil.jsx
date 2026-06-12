@@ -4,7 +4,7 @@ import ReactLogo from "../../Icones/react.png";
 import Profile from "../../Images/Profil.jpg";
 
 function Accueil () {
-    const fullText = "Passionné par le développement web et les solutions logicielles, je crée des interfaces modernes et performantes. Mon expertise s'étend de React à Django, avec une attention particulière portée à l'expérience utilisateur.";
+    const fullText = "Étudiant en Informatique et passionné par le développement web, mon expertise technique s'étend des architectures Front-end aux solutions Back-end, avec une attention constante portée à l'expérience utilisateur.";
     
     const [displayText, setDisplayText] = useState("");
     const [index, setIndex] = useState(0);

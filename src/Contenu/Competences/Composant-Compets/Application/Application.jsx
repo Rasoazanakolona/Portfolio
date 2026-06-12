@@ -1,5 +1,6 @@
 import styles from "../FBBAO.module.css"
-import windev from "../../../../Icones/windev.png"
+// import windev from "../../../../Icones/windev.png"
+import NetBeans from "../../../../Icones/NetBeans.svg";
 import { AppWindow } from 'lucide-react';
 
 function Appli () {
@@ -11,8 +12,8 @@ function Appli () {
             </div>
             <div className={styles.blocsSeul}>
                 <h3>DÉVELOPPEMENT DESKTOP</h3>
-                <img src={windev} alt="Windev" />
-                <p>WinDev</p>
+                <img src={NetBeans} alt="Windev" />
+                <p>NetBeans</p>
             </div>
         </div>
     )

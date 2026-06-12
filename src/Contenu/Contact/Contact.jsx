@@ -28,9 +28,9 @@ function Contact () {
                 <div id={styles.bloc}>
                     <div className={styles.bloc}>
                         <h3>Adresse</h3>
-                        <a href="https://www.google.com/maps/search/Ambohimangakely,+Antanambao+Lot+297AI" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+                        <a href="https://www.google.com/maps/search/Ambohimangakely,+Antanambao+Lot+346AIBis" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
                             <i className="bi bi-geo-alt-fill"></i>
-                            <p>Ambohimangakely, Antanambao Lot 297AI</p>
+                            <p>Ambohimangakely, Antanambao Lot 346 AI Bis</p>
                         </a>
                     </div>
 

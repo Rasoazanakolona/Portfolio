@@ -33,7 +33,7 @@ function Apropos () {
                             <h3>COMPETENCE PERSONNELLES</h3>
                         </div>
                        <div className={styles.detailID}>
-                            <p> <CheckCircle size={14} />  Autonomie</p>
+                            <p> <CheckCircle size={14} />  Serieux</p>
                             <p> <CheckCircle size={14} />  Flexible </p>
                             <p> <CheckCircle size={14} />  Travail en équipe</p>
                             <p> <CheckCircle size={14} />  Innovant</p>
@@ -45,8 +45,7 @@ function Apropos () {
                             <h3>OBJECTIFS</h3>
                         </div>
                        <div className={styles.detailIDS}>
-                            <p>Stage de 3 mois, basé sur le technologie React et Django. La conception est 
-                            reposé sur le UML. </p>
+                            <p>Recherche d'un stage de 3 mois dès début juillet dans le domaine du développement web. </p>
                         </div>
                     </div>
                 </div>

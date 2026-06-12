@@ -7,7 +7,7 @@ import Projet from "./Contenu/Projets/Projet";
 import Apropos from './Contenu/Apropos/Apropos';
 import Competences from './Contenu/Competences/Competence';
 import Contact from './Contenu/Contact/Contact';
-import cv from "./Contenu/Accueil/CV.pdf"; 
+import cv from "./Contenu/Accueil/CV_Jean_Marco.pdf"; 
 import styles from './App.module.css';
 
 function App() {
