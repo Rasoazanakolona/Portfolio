@@ -1,5 +1,5 @@
 .contenuAccueil{
-background-color: #0f172a; 
+    background-color: #0f172a; 
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 70px); 
@@ -7,7 +7,7 @@ background-color: #0f172a;
     width: 100%;
 }
 .Blocs{
-animation: Apparition 0.5s ease forwards;
+    animation: Apparition 0.5s ease forwards;
     border-top: solid 2px rgb(39, 44, 63);
     flex: 1;
     display: flex;
@@ -16,28 +16,28 @@ animation: Apparition 0.5s ease forwards;
     position: relative;
 }
 .HeroSection{
-display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     padding: 20px 40px;
     align-items: center;
 }
 .Btelechargement{
-display: flex;
-flex-direction: row;
-align-items: center;
-text-decoration: none;
-border: 1px solid rgba(56, 189, 248, 0.3);
-padding: 8px 18px;
-border-radius: 25px;
-transition: 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    padding: 8px 18px;
+    border-radius: 25px;
+    transition: 0.3s ease;
 }
 .HeroSection span{
-font-weight: 500;
-transition:  0.5s ease;
+    font-weight: 500;
+    transition:  0.5s ease;
 }
 span:hover{
-color: rgb(0, 212, 250) ;
+    color: rgb(0, 212, 250) ;
 }
 .Btelechargement:hover {
     background: rgba(43, 146, 190, 0.1);
@@ -49,7 +49,7 @@ color: rgb(0, 212, 250) ;
     font-weight: 500;
 }
 .ContenuAnt{
-display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -59,11 +59,11 @@ display: flex;
     gap: 50px;
 }
 .ContenuAnt img {
-width: 300px;
-border-radius: 30% 10% 30% /10% 30% 10%;
-object-fit: cover;
-border: solid rgb(0, 93, 109) 2px;
-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    width: 300px;
+    border-radius: 30% 10% 30% /10% 30% 10%;
+    object-fit: cover;
+    border: solid rgb(0, 93, 109) 2px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 .TextWrapper {
     max-width: 550px;
@@ -71,28 +71,12 @@ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .ContenuAnt h3 {
-font-size: 1.2rem;
-line-height: 1.7;
-color: #94a3b8; 
-margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #94a3b8; 
+    margin: 0;
 }
-footer img {
-position: absolute;
-bottom: 10px;
-right: 15px;
-width: 50px;
-animation: Rotation 10s linear infinite;
-}
-.logoReactRotatif {
-    position: absolute;
-    bottom: 20px;
-    right: 25px;
-    width: 50px;
-    height: auto;
-    z-index: 10;
-    animation: Rotation 10s linear infinite;
-    pointer-events: none; 
-}
+
 @keyframes Apparition {
 from{
     transform: translateY(-10px);
@@ -103,40 +87,30 @@ to {
     opacity: 1;
 }
 }
-@keyframes Rotation {
-from{
-    transform: rotate(0deg);
-}
-to {
-    transform: rotate(360deg);
-}
-}
-@media (max-width: 900px) {
-    .ContenuAnt {
-        flex-direction: column;
-        text-align: center;
-    }
-    .TextWrapper {
-        text-align: center;
-    }
-    .BadgeContainer {
-        justify-content: center;
-    }
-}
-.BadgeContainer {
+
+.SocialContainer {
     display: flex;
-    gap: 12px;
+    gap: 16px;
     margin-top: 30px;
 }
 
-.Badge {
+.SocialLink {
     background: rgba(255, 255, 255, 0.03);
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    padding: 10px;
+    border-radius: 50%; 
     color: #38bdf8;
-    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid rgba(56, 189, 248, 0.2);
+    transition: 0.3s ease;
+}
+
+.SocialLink:hover {
+    background: rgba(56, 189, 248, 0.1);
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+    transform: translateY(-3px);
+    color: rgb(0, 212, 250);
 }
 
 .typewriter {
@@ -179,12 +153,7 @@ to {
     .TextWrapper {
         text-align: center;
     }
-    .BadgeContainer {
+    .SocialContainer {
         justify-content: center;
-    }
-    .logoReactRotatif {
-        bottom: 15px;
-        right: 15px;
-        width: 40px;
     }
 }

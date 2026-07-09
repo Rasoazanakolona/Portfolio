@@ -1,12 +1,12 @@
 .Apropos h1{
-margin: 20px 0 20px 25px;
+    margin: 20px 0 20px 25px;
 }
 .blocs{
-border-top: solid 2px rgb(39, 44, 63);
-display: flex;
-flex-direction: column;
-padding:  0 25px 40px 25px;
-animation: Sorter 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    border-top: solid 2px rgb(39, 44, 63);
+    display: flex;
+    flex-direction: column;
+    padding:  0 25px 40px 25px;
+    animation: Sorter 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 .IPersonnelle, .InfoBloc{
     background: rgba(30, 41, 59, 0.5);
@@ -32,10 +32,10 @@ animation: Sorter 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
     border-bottom: px solid rgba(255, 255, 255, 0.1);
 }
 .TitreBlocs h3 {
-letter-spacing: 3px;
-color:  #38bdf8;
-margin: 0;
-font-size: 0.9rem;
+    letter-spacing: 3px;
+    color:  #38bdf8;
+    margin: 0;
+    font-size: 0.9rem;
 }
 .detailIP, .detailIDS{
     padding: 20px;
@@ -54,7 +54,7 @@ font-size: 0.9rem;
     color: #f1f5f9;
 }
 .Specialiter{
-font-weight: bold;
+    font-weight: bold;
     color: white;
     background: rgba(56, 189, 248, 0.2);
     padding: 2px 8px;

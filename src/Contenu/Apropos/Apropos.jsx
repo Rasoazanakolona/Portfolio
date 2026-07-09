@@ -45,7 +45,7 @@ function Apropos () {
                             <h3>OBJECTIFS</h3>
                         </div>
                        <div className={styles.detailIDS}>
-                            <p>Recherche d'un stage de 3 mois dès début juillet dans le domaine du développement web. </p>
+                            <p>Recherche d'un stage de 3 mois immédiatement disponible dans le domaine du développement web et logiciel. </p>
                         </div>
                     </div>
                 </div>
