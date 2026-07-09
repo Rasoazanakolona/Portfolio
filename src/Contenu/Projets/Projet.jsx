@@ -57,7 +57,9 @@ const QuittezAffichage = () => {
             <div className={styles.Blocs}>
                 <div className={styles.gauche}>
                     <div className={styles.CGauche}>
-                        <h3>PREMIER PROJET : Galerie d'images interactive</h3>
+                        <h3>
+                            <span className={styles.dateProjet}>Mai 2024 </span> : Galerie d'images interactive
+                        </h3>
                             <p>
                             Ce projet a pour objectif de mettre en avant la maîtrise des propriétés CSS Grid et Flexbox pour la création de mises en page complexes et responsives.
                             Contrairement aux projets utilisant des frameworks modernes, ce site a été développé exclusivement avec les technologies natives : HTML5, CSS3 et JavaScript pur (Vanilla JS).
@@ -71,7 +73,9 @@ const QuittezAffichage = () => {
                         </div>
                     </div>
                     <div className={styles.CGauche}>
-                        <h3>DEUXIEME PROJET : Gestion des étudiants et des présences</h3>
+                        <h3>
+                            <span className={styles.dateProjet}>Décembre 2024 </span> : Gestion des étudiants et des présences
+                        </h3>
                     <p>
                     La création de ce projet permet de centraliser la gestion des étudiants et de leurs présences au sein d'une base de données unique, facilitant ainsi le suivi administratif durant l'année universitaire.
                     L'application simplifie les tâches de gestion grâce à un système complet (ajout, modification et suppression en cas d'erreur de saisie). Elle offre également aux administrateurs une visualisation claire des statistiques de présence via des graphiques interactifs (affichant en vert les présents et en rouge les absents).
@@ -87,7 +91,9 @@ const QuittezAffichage = () => {
                     </div>
                 </div>
                 <div className={styles.droite}>
-                    <h3>TROISIEME PROJET : Gestion des matériels et des équipements</h3>
+                    <h3>
+                        <span className={styles.dateProjet}>Mars 2025 – Juillet 2025 </span> : Gestion des matériels et des équipements
+                    </h3>
                     <p>
                         Ce projet a pour objectif de centraliser la gestion de tous les matériels et équipements au sein du Ministère de l’Enseignement Technique et de la Formation Professionnelle (METFP). Il permet à la DIDN (Direction de l’Innovation et du Développement Numérique) de suivre en temps réel les flux d'entrées et de sorties des équipements dans chaque région de Madagascar. Le développement de cette application web repose sur React pour le frontend, Django pour le backend et PostgreSQL pour la gestion de la base de données.
                     </p>
@@ -178,4 +184,4 @@ const QuittezAffichage = () => {
     )
 }
 
-export default Projet ;
+export default Projet;

@@ -36,7 +36,8 @@ function Apropos () {
                             <p> <CheckCircle size={14} />  Serieux</p>
                             <p> <CheckCircle size={14} />  Flexible </p>
                             <p> <CheckCircle size={14} />  Travail en équipe</p>
-                            <p> <CheckCircle size={14} />  Innovant</p>
+                            <p> <CheckCircle size={14} />  Curieux</p>
+                            <p> <CheckCircle size={14} />  Créatif</p>
                         </div>
                     </div>
                     <div className={styles.InfoBloc}>

@@ -31,15 +31,18 @@ function Accueil () {
         }
     }, [index, phase, fullText]);
 
-    return(
+    return (
         <div className={styles.contenuAccueil}>
             <header className={styles.HeroSection}>
-                <h1>Developpeur</h1>
+                <h1>Accueil</h1>
             </header>
             <div className={styles.Blocs}>
                 <div className={styles.ContenuAnt}>
-                    <img src={Profile} alt="Profile" />
+                    <img src={Profile} alt="Profile" className={styles.ProfilImage} />
                     <div className={styles.TextWrapper}>
+                        <h2 className={styles.NomArtiste}>
+                            Rasoazanakolona Heriniaina Jean Marco
+                        </h2>
                         <h3 className={styles.typewriter}>
                             {displayText}
                             {phase !== "finished" && (
@@ -50,17 +53,22 @@ function Accueil () {
                         </h3>
                         
                         <div className={styles.SocialContainer}>
-                            <a href="https://github.com/Rasoazanakolona" target="_blank" rel="noopener noreferrer" className={styles.SocialLink} title="Mon GitHub">
-                                <FaGithub size={30} />
-                            </a>
-                            <a href="https://www.linkedin.com/in/marco-heriniaina" target="_blank" rel="noopener noreferrer" className={styles.SocialLink} title="Mon LinkedIn">
-                                <FaLinkedin size={30} />
-                            </a>
+                            <div className={styles.SocialIconWrapper}>
+                                <a href="https://github.com/Rasoazanakolona" target="_blank" rel="noopener noreferrer" className={styles.SocialLink} title="Mon GitHub">
+                                    <FaGithub size={22} />
+                                </a>
+                            </div>
+                            <div className={styles.SocialIconWrapper}>
+                                <a href="https://www.linkedin.com/in/marco-heriniaina" target="_blank" rel="noopener noreferrer" className={styles.SocialLink} title="Mon LinkedIn">
+                                    <FaLinkedin size={22} />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
+
 export default Accueil;

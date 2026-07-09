@@ -26,8 +26,13 @@ function Basededonne () {
             
             <div className={styles.blocsDroite}>
                 <h3>CONCEPTION</h3>
-                <Workflow size={80} color="#38bdf8" strokeWidth={1.5} />
-                <p>Merise</p>
+                <div>
+                    <Workflow size={80} color="#38bdf8" strokeWidth={1.5} />
+                    <p>Merise</p>
+                </div>
+                <div>
+
+                </div>
             </div>
             </div>
         </div>
