@@ -6,10 +6,12 @@
     flex-direction: column;
     flex: 1;
 }
-.Contenu h1{
+
+.Contenu h1 {
     margin: 20px 0 20px 25px;
 }
-.Blocs{
+
+.Blocs {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
@@ -18,49 +20,58 @@
     padding-top: 30px;
     animation: Sorter 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
-.gauche, .droite {
-    background-color: rgba(30,41,59,0.08);
+
+.gauche, 
+.droite {
+    background-color: rgba(30, 41, 59, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
     padding: 25px;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px); 
     transition: all 0.4s ease;
-
 }
-.gauche:hover, .droite:hover {
+
+.gauche:hover, 
+.droite:hover {
     transform: translateY(-5px); 
     border-color: rgba(56, 189, 248, 0.4);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
-.droite video{
+
+.droite video {
     width: 100%;          
     border-radius: 12px;
     margin: 30px 0;
-    border: solid 1px rgba(56, 189, 248, 0.2);
+    border: 1px solid rgba(56, 189, 248, 0.2);
 }
-.droite h3{
+
+.droite h3 {
     margin-bottom: 10px;
 }
-.CGauche{
+
+.CGauche {
     background: rgba(15, 23, 42, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 15px;
-    padding: 20px;
+    padding: 20px 20px 70px 20px;
     margin-bottom: 20px;
     position: relative;
-    padding-bottom: 70px; 
-
 }
-.CGauche h3, .droite h3{
+
+.CGauche h3, 
+.droite h3 {
     color: #38bdf8;
     margin-bottom: 12px;
-
 }
-.CGauche p, .droite p {
+
+.CGauche p, 
+.droite p {
     text-indent: 45px;
     text-align: justify;
 }
-.CGauche button{
+
+.CGauche button {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -72,90 +83,65 @@
     border-radius: 20px;
     transition: all 0.3s ease;
 }
-.CGauche button:hover{
+
+.CGauche button:hover {
     background: #38bdf8;
-    color: black;
+    color: #000000;
     box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
 }
-.Techno{
+
+/* Badges / Technologies */
+.Techno,
+.TechnoTP {
     position: absolute;
     bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Techno {
     left: 20px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
 }
-.Techno img{
-    margin-right: 10px;
-    width: auto !important;
-    height: 25px;
-    filter: grayscale(0.4);
-    transition: 0.3s;
-}
-.Techno img:hover {
-    filter: grayscale(0);
-    transform: scale(1.2);
-}
-.TechnoTP{
-    position: absolute;
-    bottom: 20px;
+
+.TechnoTP {
     right: 20px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
 }
+
+.Techno img,
 .TechnoTP img {
     margin-right: 10px;
     width: auto !important;
     height: 25px;
     filter: grayscale(0.4);
-    transition: 0.3s;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+.Techno img:hover,
 .TechnoTP img:hover {
     filter: grayscale(0);
     transform: scale(1.2);
 }
 
-@media (max-width: 1024px) {
-    .Blocs { grid-template-columns: 1fr; }
-    .Contenu h1 {
-        font-size: 1.8rem;
-        margin: 15px 0 15px 15px;
-        text-align: center; 
-    }
-}
-
-
-@keyframes Entrant {
-from{
-    transform: translateY(-10px);
-    opacity: 0;
-}
-to{
-    transform: translateY(0);
-    opacity: 1;
-}
-}
+/* Modal / Modal d'images */
 .BlocImage {
     position: fixed;    
-    top: 19%;             
-    left: 0;           
+    top: 50%;             
+    left: 50%;           
     transform: translate(-50%, -50%); 
     z-index: 1000;      
-    
-    background-color: #0b0f27e8; 
-    border: 2px solid #0b0b0b3f; 
+    background-color: rgba(11, 15, 39, 0.91); 
+    border: 2px solid rgba(11, 11, 11, 0.25); 
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-    
     display: flex;
     flex-direction: column; 
     align-items: center;
-    min-width: 100%;
-    height: 80%;  
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;  
     overflow-y: auto;
-
     animation: Monter 1s ease forwards;
 }
 
@@ -163,43 +149,52 @@ to{
     width: 340px;           
     margin: 10px;
     border-radius: 5px;
-    transition: 0.5s ease;
+    transition: all 0.5s ease;
 }
+
 .BlocImage img:hover {
-    border: solid 2px rgb(9, 153, 163);
+    border: 2px solid rgb(9, 153, 163);
     box-shadow: 0 0 10px rgba(5, 144, 175, 0.8);
 }
+
 .BlocImage button {
     background-color: transparent;
     border: none;
     position: absolute;
     right: 10px;
+    top: 10px;
+    cursor: pointer;
 }
-.BlocCaptures{
+
+.BlocCaptures {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 340px);
-    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 340px));
+    justify-content: center;
     row-gap: 20px;
+    column-gap: 20px;
     padding: 20px;
     width: 100%;
 }
 
-.blocCap{
+.blocCap {
     position: relative;
-    width: 340px; 
+    width: 100%; 
+    max-width: 340px;
     height: auto;
 }
+
 .blocCap img {
     width: 100%; 
     border-radius: 5px;
     border: 2px solid rgba(56, 189, 248, 0.2);
 }
+
 .blocCap p {
     position: absolute;
     top: 20px;
     left: 20px;
-    border-bottom: solid 2px  rgb(54, 241, 255);
-    background-color:rgba(8, 8, 8, 0.877);
+    border-bottom: 2px solid rgb(54, 241, 255);
+    background-color: rgba(8, 8, 8, 0.88);
     padding: 10px;
     z-index: 10;
     opacity: 0;
@@ -207,46 +202,78 @@ to{
     transition: all 0.3s ease;
     color: rgb(54, 241, 255);
 }
+
 .blocCap:hover p {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Style de la date du projet */
 .dateProjet {
     color: #94a3b8; 
     font-weight: 500;
     font-style: italic;
     margin-right: 8px;
 }
-@keyframes Monter {
-    from{
-        transform: translateY(100vh);
+
+/* Animations */
+@keyframes Entrant {
+    from {
+        transform: translateY(-10px);
         opacity: 0;
     }
-    to{
+    to {
         transform: translateY(0);
         opacity: 1;
     }
 }
+
+@keyframes Monter {
+    from {
+        transform: translate(-50%, 100vh);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
 @keyframes Descendre {
-    from{
-        transform: translateY(0);
+    from {
+        transform: translate(-50%, -50%);
         opacity: 1;
     }
     to {
-        transform: translateY(100vh);
+        transform: translate(-50%, 100vh);
         opacity: 0;
     }
 }
-@keyframes Sorter{
+
+@keyframes Sorter {
     from {
-    transform: translateY(-10px);
-    opacity: 0;
+        transform: translateY(-10px);
+        opacity: 0;
     }
-    to{
-    transform: translateY(0);
-    opacity: 1;
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
-.BlocImageSortie{
+
+.BlocImageSortie {
     animation: Descendre 1s ease-in forwards;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .Blocs { 
+        grid-template-columns: 1fr; 
+    }
+    
+    .Contenu h1 {
+        font-size: 1.8rem;
+        margin: 15px 0 15px 15px;
+        text-align: center; 
+    }
 }
